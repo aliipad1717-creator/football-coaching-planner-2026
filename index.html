@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b2d57">
+<link rel="manifest" href="manifest.json">
+<title>Football Coaching Planner 2026</title>
+<style>
+:root{--navy:#0b2d57;--blue:#1769c2;--sky:#dff0ff;--red:#b3262e;--ink:#17243a;--muted:#66758a;--bg:#f4f7fb;--card:#fff;--line:#d9e1ec}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;background:var(--bg);color:var(--ink);touch-action:manipulation}
+button,input,textarea,select{font:inherit}button{cursor:pointer;border:0}
+.app{min-height:100vh}.top{height:82px;background:linear-gradient(110deg,#08264b,#0e3b73);color:#fff;display:flex;align-items:center;padding:10px 18px;gap:20px}.brand{display:flex;align-items:center;gap:12px;min-width:300px}.crest{width:54px;height:54px;border:2px solid #fff;border-radius:14px;display:grid;place-items:center;font-weight:800;font-size:11px;text-align:center}.brand b{font-size:18px}.brand small{display:block;opacity:.8}.title{font-size:22px;font-weight:800;flex:1;text-align:center}.year{color:#72b7ff}.nav{display:flex;gap:7px}.nav button{background:transparent;color:#dcecff;padding:12px 10px;border-radius:12px}.nav button.active,.nav button:hover{background:#1a6bc7;color:#fff}.main{padding:18px;max-width:1500px;margin:auto}.view{display:none}.view.active{display:block}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 5px 18px #0b2d570b}.card h3{margin:0 0 8px}.muted{color:var(--muted)}.btn{background:var(--navy);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700}.btn.secondary{background:#eaf3ff;color:var(--navy)}.btn.red{background:var(--red)}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.monthgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.month{padding:16px;border:1px solid var(--line);border-radius:14px;background:#fff;text-align:left}.month strong{display:block;font-size:18px}.month.selected{outline:3px solid #73b6ff;background:#eef7ff}.micro{display:grid;grid-template-columns:240px 1fr;gap:14px}.list{display:flex;flex-direction:column;gap:8px}.list button{text-align:left;padding:12px;border:1px solid var(--line);background:#fff;border-radius:10px}.list button.sel{background:#eaf3ff;border-color:#70b4ff}.form{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.field label{display:block;font-size:12px;font-weight:700;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:9px;padding:10px;background:#fff}.field textarea{min-height:100px;resize:vertical}.sessionhead{display:flex;justify-content:space-between;align-items:center;gap:12px}.roster{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.jerseyCard{border:1px solid var(--line);border-radius:14px;padding:10px;text-align:center;background:#fff}.jersey{height:90px;display:grid;place-items:center;position:relative}.shirt{width:58px;height:66px;background:#fff;border:2px solid #0d2444;clip-path:polygon(25% 0,40% 9%,60% 9%,75% 0,100% 17%,84% 35%,84% 100%,16% 100%,16% 35%,0 17%);position:relative;overflow:hidden}.shirt:after{content:"";position:absolute;left:38%;top:-8%;width:18%;height:125%;background:#0b2d57;transform:rotate(30deg)}.shirt span{position:absolute;z-index:2;left:0;right:0;top:25px;font-weight:900;color:#10223f}.opp .shirt{background:#c92c35;border-color:#74151b}.opp .shirt:after{background:#7c151b}.opp .shirt span{color:#fff}.keeper .shirt{background:#f2c300}.add{margin-top:6px}.tactics{display:grid;grid-template-columns:250px 1fr;gap:14px}.tools{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px}.toolbtn{width:100%;padding:10px;margin-bottom:7px;border-radius:9px;background:#eef3f8;text-align:left}.toolbtn.active{background:#1769c2;color:#fff}.pitchWrap{background:#0a5b2b;padding:14px;border-radius:18px;min-height:650px}.pitch{position:relative;height:620px;border:3px solid #fff;border-radius:10px;background:repeating-linear-gradient(90deg,#087236 0,#087236 7%,#096b31 7%,#096b31 14%);overflow:hidden;touch-action:none}.pitch:before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:2px solid #fff}.pitch:after{content:"";position:absolute;width:110px;height:110px;border:2px solid #fff;border-radius:50%;left:calc(50% - 55px);top:calc(50% - 55px)}.piece{position:absolute;width:54px;height:64px;transform:translate(-50%,-50%);touch-action:none;user-select:none}.piece .shirt{margin:auto}.piece .label{position:absolute;top:43px;left:0;right:0;text-align:center;color:#fff;font-weight:900;text-shadow:0 1px 2px #000}.ball{width:28px;height:28px;border-radius:50%;background:#fff;border:2px solid #111;position:absolute;transform:translate(-50%,-50%);font-size:18px;display:grid;place-items:center}.arrow{position:absolute;height:4px;transform-origin:0 50%;pointer-events:none;border-radius:4px}.arrow.pass{background:#ffd21a}.arrow.move{background:#fff;border-top:4px dashed #fff;height:0}.arrow:after{content:"";position:absolute;right:-1px;top:-7px;border-left:14px solid currentColor;border-top:8px solid transparent;border-bottom:8px solid transparent}.pass{color:#ffd21a}.move{color:#fff}.status{padding:9px;border-radius:10px;background:#f0f6ff;margin-bottom:8px;font-size:13px}.calHeader{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.day{background:#fff;border:1px solid var(--line);min-height:110px;border-radius:10px;padding:8px}.day b{font-size:12px}.event{margin-top:8px;background:#eaf3ff;border-left:4px solid #1769c2;padding:6px;border-radius:5px;font-size:11px}.analysis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}@media(max-width:900px){.nav button span{display:none}.top{height:auto;flex-wrap:wrap}.brand{min-width:0}.title{order:3;width:100%}.grid,.monthgrid,.analysis{grid-template-columns:1fr 1fr}.micro,.tactics{grid-template-columns:1fr}.roster{grid-template-columns:repeat(3,1fr)}}@media(max-width:600px){.grid,.monthgrid,.analysis{grid-template-columns:1fr}.week{grid-template-columns:repeat(2,1fr)}.pitch{height:520px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top">
+<div class="brand"><div class="crest">GUATE<br>FÚTBOL</div><div><b>SELECCIÓN NACIONAL</b><small>SUB-17 FEMENINA · GUATEMALA</small></div></div>
+<div class="title">FOOTBALL COACHING PLANNER <span class="year">2026</span></div>
+<nav class="nav">
+<button data-view="calendar" class="active">📅 <span>Calendario</span></button>
+<button data-view="micro">📋 <span>Microciclos</span></button>
+<button data-view="sessions">📝 <span>Sesiones</span></button>
+<button data-view="roster">👥 <span>Plantilla</span></button>
+<button data-view="board">⚽ <span>Pizarra</span></button>
+<button data-view="analysis">📊 <span>Análisis</span></button>
+</nav>
+</header>
+<main class="main">
+<section id="calendar" class="view active">
+<div class="card"><div class="calHeader"><div><h2>Calendario 2026</h2><div class="muted">Planificación anual · toca un mes para abrirlo</div></div><button class="btn" onclick="go('micro')">+ Nuevo microciclo</button></div>
+<div class="monthgrid" id="months"></div></div>
+<div class="card" style="margin-top:14px"><h3>Próximas actividades</h3><div id="upcoming"></div></div>
+</section>
+
+<section id="micro" class="view">
+<div class="sessionhead"><div><h2>Microciclos</h2><div class="muted">Organiza convocatorias, cargas y objetivos.</div></div><button class="btn" onclick="newMicro()">+ Nuevo microciclo</button></div>
+<div class="micro" style="margin-top:14px"><div class="card"><div id="microList" class="list"></div></div><div class="card"><div class="form">
+<div class="field"><label>Nombre</label><input id="mName"></div><div class="field"><label>Semana</label><input id="mWeek"></div>
+<div class="field"><label>Objetivo principal</label><input id="mGoal"></div><div class="field"><label>Categoría</label><select id="mCat"><option>Sub-17 Femenina</option><option>Sub-20 Femenina</option><option>Sub-15 Femenina</option></select></div>
+<div class="field" style="grid-column:1/-1"><label>Notas</label><textarea id="mNotes"></textarea></div></div><div class="toolbar"><button class="btn" onclick="saveMicro()">Guardar cambios</button><button class="btn red" onclick="deleteMicro()">Eliminar</button></div></div></div>
+</section>
+
+<section id="sessions" class="view">
+<div class="sessionhead"><div><h2>Sesiones de entrenamiento</h2><div class="muted">A · Calentamiento · B · Técnico · C · Físico · D · Posesión · E · Juego</div></div><button class="btn" onclick="newSession()">+ Nueva sesión</button></div>
+<div class="grid" style="margin-top:14px" id="sessionCards"></div>
+</section>
+
+<section id="roster" class="view">
+<div class="sessionhead"><div><h2>Plantilla Sub-17</h2><div class="muted">Camisola Guatemala para jugadoras · rojo para rivales.</div></div><button class="btn" onclick="go('board')">Ir a pizarra</button></div>
+<div class="roster" id="rosterGrid" style="margin-top:14px"></div>
+</section>
+
+<section id="board" class="view">
+<div class="tactics">
+<div class="tools">
+<h3>Pizarra táctica</h3><div class="status" id="status">Selecciona una herramienta.</div>
+<button class="toolbtn active" data-tool="move">↖ Mover jugadoras</button>
+<button class="toolbtn" data-tool="player">👕 Agregar jugadora</button>
+<button class="toolbtn" data-tool="opponent">🔴 Agregar rival</button>
+<button class="toolbtn" data-tool="ball">⚽ Agregar balón</button>
+<button class="toolbtn" data-tool="pass">➡️ Trayectoria de balón</button>
+<button class="toolbtn" data-tool="movement">〰️ Movimiento / desmarque</button>
+<button class="toolbtn" data-tool="clearArrows">🧹 Borrar líneas</button>
+<button class="toolbtn" data-tool="clear">♻️ Limpiar pizarra</button>
+<hr>
+<label>Jugadora</label><select id="playerNo"></select>
+<label style="display:block;margin-top:8px">Color rival</label><select id="oppColor"><option value="#c92c35">Rojo</option><option value="#1e4ea8">Azul</option><option value="#111">Negro</option><option value="#f28c18">Naranja</option></select>
+</div>
+<div class="pitchWrap"><div class="pitch" id="pitch"></div></div>
+</div>
+</section>
+
+<section id="analysis" class="view">
+<h2>Análisis</h2><div class="analysis">
+<div class="card"><h3>FODA</h3><textarea id="foda" placeholder="Fortalezas, oportunidades, debilidades y amenazas..."></textarea></div>
+<div class="card"><h3>Objetivos</h3><textarea id="obj" placeholder="Objetivos del microciclo..."></textarea></div>
+<div class="card"><h3>Observaciones</h3><textarea id="obs" placeholder="Scouting, carga, rendimiento..."></textarea></div>
+</div>
+</section>
+</main>
+</div>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let state=JSON.parse(localStorage.getItem('fcp2026')||'null')||{micros:[],sessions:[],board:{pieces:[],arrows:[]}};
+let microSel=0, sessionSel=0, tool='move', drawingStart=null, drag=null;
+
+function persist(){localStorage.setItem('fcp2026',JSON.stringify(state))}
+function go(id){$$('.view').forEach(v=>v.classList.toggle('active',v.id===id));$$('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id)); if(id==='micro')renderMicros();if(id==='sessions')renderSessions();if(id==='roster')renderRoster();if(id==='board')renderBoard();if(id==='calendar')renderCalendar();window.scrollTo(0,0)}
+$$('.nav button').forEach(b=>b.onclick=()=>go(b.dataset.view));
+const months=['ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO','JULIO','AGOSTO','SEPTIEMBRE','OCTUBRE','NOVIEMBRE','DICIEMBRE'];
+function renderCalendar(){ $('#months').innerHTML=months.map((m,i)=>`<button class="month" onclick="selectMonth(${i})"><strong>${m}</strong><span class="muted">Planificación · ${i+1}/2026</span></button>`).join('');$('#upcoming').innerHTML=state.micros.length?state.micros.map(m=>`<div class="event"><b>${m.name}</b> · ${m.week}<br>${m.goal||'Sin objetivo definido'}</div>`).join(''):'<div class="muted">Aún no hay microciclos guardados.</div>'}
+function selectMonth(i){go('micro');setTimeout(()=>{newMicro();$('#mWeek').value=months[i]+' 2026'},50)}
+function newMicro(){state.micros.push({name:'Microciclo #'+(state.micros.length+1),week:'',goal:'',cat:'Sub-17 Femenina',notes:''});microSel=state.micros.length-1;persist();renderMicros()}
+function renderMicros(){if(!state.micros.length)newMicro();let m=state.micros[microSel]||state.micros[0];microSel=state.micros.indexOf(m);$('#microList').innerHTML=state.micros.map((x,i)=>`<button class="${i===microSel?'sel':''}" onclick="pickMicro(${i})"><b>${x.name}</b><br><small>${x.week||'Sin fecha'}</small></button>`).join('');$('#mName').value=m.name;$('#mWeek').value=m.week;$('#mGoal').value=m.goal;$('#mCat').value=m.cat;$('#mNotes').value=m.notes}
+function pickMicro(i){microSel=i;renderMicros()}
+function saveMicro(){let m=state.micros[microSel];Object.assign(m,{name:$('#mName').value,week:$('#mWeek').value,goal:$('#mGoal').value,cat:$('#mCat').value,notes:$('#mNotes').value});persist();renderMicros();alert('Microciclo guardado.')}
+function deleteMicro(){if(!confirm('¿Eliminar este microciclo?'))return;state.micros.splice(microSel,1);microSel=Math.max(0,microSel-1);persist();renderMicros()}
+function newSession(){state.sessions.unshift({title:'Nueva sesión',date:new Date().toLocaleDateString('es-GT'),objective:'',phase:'A · Calentamiento',notes:''});sessionSel=0;persist();renderSessions()}
+function renderSessions(){if(!state.sessions.length)newSession();$('#sessionCards').innerHTML=state.sessions.map((s,i)=>`<div class="card"><h3>${s.title}</h3><div class="muted">${s.date}</div><p><b>Objetivo:</b> ${s.objective||'—'}</p><p><b>Fase:</b> ${s.phase}</p><textarea onchange="state.sessions[${i}].notes=this.value;persist()" placeholder="Notas">${s.notes||''}</textarea><div class="toolbar"><button class="btn secondary" onclick="editSession(${i})">Editar</button><button class="btn" onclick="go('board')">Pizarra</button></div></div>`).join('')}
+function editSession(i){let s=state.sessions[i];s.title=prompt('Nombre de sesión',s.title)||s.title;s.objective=prompt('Objetivo',s.objective)||s.objective;s.phase=prompt('Fase',s.phase)||s.phase;persist();renderSessions()}
+function renderRoster(){$('#rosterGrid').innerHTML=Array.from({length:24},(_,i)=>`<div class="jerseyCard"><div class="jersey"><div class="shirt"><span>${i+1}</span></div></div><b>Jugadora ${i+1}</b><button class="btn secondary add" onclick="addPiece('player',${i+1})">Agregar</button></div>`).join('')}
+function shirtHTML(no,opp=false){return `<div class="shirt" style="${opp?'background:'+($('#oppColor')?.value||'#c92c35')+';border-color:#711018':''}"><span style="${opp?'color:#fff':''}">${no}</span></div>`}
+function addPiece(type,no){let pitch=$('#pitch');let x=type==='ball'?50:20+Math.random()*60,y=25+Math.random()*50;state.board.pieces.push({id:Date.now()+Math.random(),type,no,x,y});persist();renderBoard();$('#status').textContent=(type==='player'?'Jugadora '+no:type==='opponent'?'Rival':'Balón')+' agregado. Puedes moverlo.'}
+function renderBoard(){let p=$('#pitch');p.innerHTML='';state.board.arrows.forEach(a=>drawArrowDOM(a));state.board.pieces.forEach(o=>{let el=document.createElement('div');el.className=o.type==='ball'?'ball':'piece';el.dataset.id=o.id;el.style.left=o.x+'%';el.style.top=o.y+'%';el.innerHTML=o.type==='ball'?'⚽':shirtHTML(o.no,o.type==='opponent');p.appendChild(el);bindPiece(el,o)});$('#playerNo').innerHTML=Array.from({length:24},(_,i)=>`<option>${i+1}</option>`).join('')}
+function bindPiece(el,o){el.onpointerdown=e=>{e.preventDefault();if(tool==='move'){drag={o,el};el.setPointerCapture(e.pointerId)}else if(tool==='pass'||tool==='movement'){drawingStart={x:e.clientX,y:e.clientY};el.setPointerCapture(e.pointerId)}};
+el.onpointermove=e=>{if(drag&&drag.el===el){let r=$('#pitch').getBoundingClientRect();o.x=Math.max(3,Math.min(97,(e.clientX-r.left)/r.width*100));o.y=Math.max(4,Math.min(96,(e.clientY-r.top)/r.height*100));el.style.left=o.x+'%';el.style.top=o.y+'%'}};
+el.onpointerup=e=>{if(drag&&drag.el===el){drag=null;persist()}};
+}
+$('#pitch').onpointerdown=e=>{if(e.target!==$('#pitch'))return;let r=$('#pitch').getBoundingClientRect(),x=(e.clientX-r.left)/r.width*100,y=(e.clientY-r.top)/r.height*100;
+if(tool==='player')addPiece('player',+$('#playerNo').value);else if(tool==='opponent')addPiece('opponent',Math.floor(Math.random()*9)+1);else if(tool==='ball')addPiece('ball');else if(tool==='pass'||tool==='movement'){if(!drawingStart)drawingStart={x:e.clientX,y:e.clientY};else{let end={x:e.clientX,y:e.clientY};state.board.arrows.push({x1:drawingStart.x,y1:drawingStart.y,x2:end.x,y2:end.y,type:tool});drawingStart=null;persist();renderBoard()}}};
+function drawArrowDOM(a){let r=$('#pitch').getBoundingClientRect(),x1=a.x1-r.left,y1=a.y1-r.top,x2=a.x2-r.left,y2=a.y2-r.top,len=Math.hypot(x2-x1,y2-y1),ang=Math.atan2(y2-y1,x2-x1)*180/Math.PI;let d=document.createElement('div');d.className='arrow '+(a.type==='pass'?'pass':'move');d.style.left=x1+'px';d.style.top=y1+'px';d.style.width=len+'px';d.style.transform=`rotate(${ang}deg)`;$('#pitch').appendChild(d)}
+$$('.toolbtn').forEach(b=>b.onclick=()=>{tool=b.dataset.tool;drawingStart=null;$$('.toolbtn').forEach(x=>x.classList.toggle('active',x===b));$('#status').textContent=({move:'Arrastra jugadoras, rivales y balón.',player:'Toca la cancha para agregar una jugadora.',opponent:'Toca la cancha para agregar un rival.',ball:'Toca la cancha para agregar el balón.',pass:'Toca inicio y después destino para dibujar el pase.',movement:'Toca inicio y después destino para dibujar el movimiento.',clearArrows:'Líneas borradas.',clear:'Pizarra limpia.'})[tool]||'';if(tool==='clearArrows'){state.board.arrows=[];persist();renderBoard()}if(tool==='clear'){state.board={pieces:[],arrows:[]};persist();renderBoard()}});
+renderCalendar();renderRoster();renderSessions();renderBoard();
+</script>
+</body></html>

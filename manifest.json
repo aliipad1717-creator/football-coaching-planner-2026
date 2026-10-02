@@ -1,0 +1,10 @@
+{
+  "name": "Football Coaching Planner 2026",
+  "short_name": "FCP 2026",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#0b2d57",
+  "orientation": "landscape",
+  "icons": []
+}
